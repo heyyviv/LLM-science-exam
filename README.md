@@ -38,7 +38,14 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your_username/kaggle-llm-science-exam.git
+git clone https://github.com/heyviv/kaggle-llm-science-exam.git
+
+link to notebooks
+https://www.kaggle.com/code/heyviv/wikipedia-faiss-index-creation
+https://www.kaggle.com/code/heyviv/llm-science-exam-p1
+https://www.kaggle.com/code/heyviv/llm-scince-exam-part-2
+https://www.kaggle.com/code/heyviv/llm-science-p3-submission
+
 Install dependencies:
 
 Copy code
@@ -54,6 +61,6 @@ Evaluate the model:
 
 Submit the generated predictions to the Kaggle competition platform for evaluation.
 Results
-The solution achieved [insert performance metrics here] on the Kaggle leaderboard, demonstrating its effectiveness in answering difficult science questions using LLMs.
+The solution achieved 0.78 on the Kaggle leaderboard, demonstrating its effectiveness in answering difficult science questions using LLMs.
 
 Feel free to customize and expand upon this template based on your specific approach and results. Let me know if you need further assistance or clarification on any aspect!
