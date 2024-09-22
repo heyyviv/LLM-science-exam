@@ -1,6 +1,4 @@
 
-
-
 # LLM Science Exam
 
 This repository contains the implementation for the **LLM Science Exam** project, focusing on utilizing Large Language Models (LLMs) to answer science-based multiple-choice questions (MCQs). The project incorporates a DeBERTa-based model with an integrated Wikipedia-based context retrieval system, achieving an accuracy of 80%.
@@ -49,6 +47,16 @@ pip install -r requirements.txt
    python run_model.py --input data/test_mcq.json
    ```
 
+## Hugging Face Deployment
+
+The project is deployed on Hugging Face Spaces. Check out the deployment here:
+[Hugging Face Spaces - LLM Science Exam](https://huggingface.co/spaces/v1vu/image_captioning/tree/main)
+
+## Running Notebooks on Kaggle
+
+You can also run the notebooks and experiment with the model on Kaggle. Visit my Kaggle profile here:
+[Kaggle Profile - heyviv](https://www.kaggle.com/heyviv)
+
 ## Future Work
 
 - **Model Improvements**: Investigate additional model architectures like GPT-3 or PaLM.
@@ -62,4 +70,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## License
 
 This project is licensed under the MIT License.
-
