@@ -1,6 +1,6 @@
-Here’s a markdown-friendly README for your GitHub repo:
 
-```markdown
+
+
 # LLM Science Exam
 
 This repository contains the implementation for the **LLM Science Exam** project, focusing on utilizing Large Language Models (LLMs) to answer science-based multiple-choice questions (MCQs). The project incorporates a DeBERTa-based model with an integrated Wikipedia-based context retrieval system, achieving an accuracy of 80%.
@@ -62,6 +62,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## License
 
 This project is licensed under the MIT License.
-```
 
-This README is structured to highlight the project details, features, and usage in a clear and professional way. Let me know if you need any adjustments!
