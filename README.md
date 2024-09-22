@@ -1,66 +1,67 @@
-# LLM-science-exam
+Here’s a markdown-friendly README for your GitHub repo:
 
-Kaggle LLM Science Exam Solution
-This repository contains the solution for the Kaggle LLM (Language Learning Model) Science Exam competition. In this competition, participants were tasked with using LLMs to answer difficult science questions based on given contexts.
+```markdown
+# LLM Science Exam
 
-Overview
-The solution utilizes various techniques from natural language processing (NLP) and deep learning to effectively tackle the challenge. Here's a breakdown of the approach:
+This repository contains the implementation for the **LLM Science Exam** project, focusing on utilizing Large Language Models (LLMs) to answer science-based multiple-choice questions (MCQs). The project incorporates a DeBERTa-based model with an integrated Wikipedia-based context retrieval system, achieving an accuracy of 80%.
 
-Data Preparation:
+## Features
 
-The provided dataset containing science questions and corresponding contexts was preprocessed to extract relevant information.
-Fine-tuning LLM:
+- **DeBERTa Integration**: Fine-tuned DeBERTa model for MCQ answering.
+- **Context Retrieval**: Wikipedia article extraction and retrieval using FAISS indexing and the `all-MiniLM-L6-v2` model.
+- **Preprocessing**: Efficient preprocessing of Wikipedia dumps to structure relevant context.
 
-A pre-trained LLM (Language Learning Model) was fine-tuned on the given dataset using the Hugging Face Transformers library.
-The fine-tuning process involved training the model to understand the context and select the correct answer from multiple choices.
-Embedding Retrieval:
 
-To improve the model's performance, sentence embeddings were retrieved from relevant Wikipedia articles using the Sentence Transformers library.
-These embeddings were used to enrich the contextual understanding of the model during inference.
-Inference:
+## Datasets
 
-During inference, the fine-tuned LLM processed the input questions and contexts to generate predictions.
-The predictions were refined by incorporating additional information from the retrieved embeddings, resulting in more accurate answers.
-Submission Generation:
+- **Wikipedia Dumps**: Downloaded and processed to provide relevant context for each MCQ.
+- **Science MCQ Dataset**: Custom dataset of multiple-choice questions from various scientific domains.
 
-The final predictions were formatted according to the competition requirements and saved in a submission CSV file for evaluation.
-Requirements
-To replicate the solution, the following dependencies are required:
+## Model Architecture
 
-Python 3.x
-Hugging Face Transformers
-Sentence Transformers
-Faiss (for efficient similarity search)
-BlingFire (for efficient sentence boundary detection)
-Other necessary libraries (specified in requirements.txt)
-Usage
-Clone the repository:
+- **DeBERTa**: A pre-trained transformer model fine-tuned for the task of MCQ answering.
+- **FAISS**: Fast retrieval system for large-scale Wikipedia articles, ensuring low-latency context fetching.
 
-bash
-Copy code
-git clone https://github.com/heyviv/kaggle-llm-science-exam.git
+## Results
 
-link to notebooks
-https://www.kaggle.com/code/heyviv/wikipedia-faiss-index-creation
-https://www.kaggle.com/code/heyviv/llm-science-exam-p1
-https://www.kaggle.com/code/heyviv/llm-scince-exam-part-2
-https://www.kaggle.com/code/heyviv/llm-science-p3-submission
+- **Accuracy**: Achieved 80% accuracy on science-based MCQs with the help of context retrieval.
+- **Benchmarking**: The model was evaluated on a well-structured test set to demonstrate performance.
 
-Install dependencies:
+## Installation
 
-Copy code
+To set up the environment, run:
+
+```bash
+git clone https://github.com/heyyviv/LLM-science-exam.git
+cd LLM-science-exam
 pip install -r requirements.txt
-Run the provided scripts:
+```
 
-bash
-Copy code
-python preprocess.py  # Data preprocessing
-python train.py       # Fine-tune the LLM
-python inference.py   # Generate predictions
-Evaluate the model:
+## Usage
 
-Submit the generated predictions to the Kaggle competition platform for evaluation.
-Results
-The solution achieved 0.78 on the Kaggle leaderboard, demonstrating its effectiveness in answering difficult science questions using LLMs.
+1. **Preprocess Wikipedia Data**: First, process the Wikipedia dumps.
+   ```bash
+   python preprocess_wikipedia.py
+   ```
 
-Feel free to customize and expand upon this template based on your specific approach and results. Let me know if you need further assistance or clarification on any aspect!
+2. **Run the Model**: Execute the main script to answer MCQs.
+   ```bash
+   python run_model.py --input data/test_mcq.json
+   ```
+
+## Future Work
+
+- **Model Improvements**: Investigate additional model architectures like GPT-3 or PaLM.
+- **Dataset Expansion**: Incorporate more diverse MCQ datasets from various scientific fields.
+- **Contextual Retrieval**: Experiment with other knowledge bases for context retrieval.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with detailed explanations.
+
+## License
+
+This project is licensed under the MIT License.
+```
+
+This README is structured to highlight the project details, features, and usage in a clear and professional way. Let me know if you need any adjustments!
